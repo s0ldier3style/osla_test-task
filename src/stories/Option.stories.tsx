@@ -1,4 +1,3 @@
-// components/reminder-options/reminder-options.stories.tsx
 import type { Meta, StoryObj } from '@storybook/react';
 import Option from '../entities/task/ui/create-task/option/option';
 import { useState } from 'react';
