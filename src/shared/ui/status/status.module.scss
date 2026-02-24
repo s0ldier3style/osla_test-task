@@ -1,0 +1,27 @@
+ @use '../../../app//styles/variables.scss' as *;
+ 
+ .status {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+
+
+    &.in_progress {
+      color: $color-main-blue;
+    }
+
+    &.completed {
+      color: $color-green;
+    }
+
+    &.expired {
+      color: $color-red;
+    }
+
+    &.on_review {
+      color: $color-purple;
+    }
+
+  }

@@ -1,0 +1,28 @@
+@use '../../../app//styles/variables.scss' as *;
+
+.attach_button {
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: $color-main-blue;
+  color: white;
+  border: none;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-block: 8px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

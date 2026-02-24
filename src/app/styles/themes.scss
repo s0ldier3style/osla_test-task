@@ -1,0 +1,23 @@
+.dark {
+  --color-main-blue: #1a5a8c;
+  --color-text-grey: #a0a0a0;
+  --color-green: #1f8a84;
+  --color-red: #b71c1c;
+  --color-purple: #6a1b9a;
+  --color-grey: #546e7a;
+  --color-orange: #bf7517;
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #aaaaaa;
+   --text-modal-title: #aaaaaa;
+  --border-color: #333333;
+  --border-color-comms: #fdfeff;
+  --bg-comms: #073e61;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}

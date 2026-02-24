@@ -1,0 +1,66 @@
+@use '../../../../../app/styles/variables.scss' as *;
+
+.option {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E8E9EA;
+  border-radius: 8px;
+}
+
+.option_label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-secondary);
+  position: relative;
+  user-select: none;
+  padding: 12px;
+  border-block-end: 1px solid #E8E9EA;
+}
+
+.option_label:last-of-type {
+    border:none;
+}
+
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+
+.custom_radio {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #D1D3D5;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.input:checked + .custom_radio {
+  border-color: $color-main-blue; 
+  background-color: $color-main-blue;
+  box-shadow: inset 0 0 0 3px #fff; 
+}
+
+.input:focus-visible + .custom_radio {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+.option_label:hover .custom_radio {
+  border-color: $color-main-blue;
+}
+
+.label_text:hover {
+  line-height: 1.2;
+  color: $color-main-blue;
+}

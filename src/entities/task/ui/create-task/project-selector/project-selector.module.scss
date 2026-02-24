@@ -1,0 +1,68 @@
+@use '../../../../../app/styles/variables.scss' as *;
+
+.selectorContainer {
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+}
+
+.selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e8e9ea;
+  border-radius: 8px;
+  background-color: var(--bg-primary);
+  padding: 12px;
+  cursor: pointer;
+}
+
+.selector:focus-within {
+  border: 1px solid $color-main-blue;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 16px;
+  outline: none;
+  color: (var(--text-secondary));
+}
+
+.initials {
+  width: 28px;
+  height: 28px;
+  background-color: #E5F3FC;
+  letter-spacing: 0%;
+  font-weight: 450;
+  padding: 10px;
+  color: $color-main-blue;
+  border-radius: 8px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-primary);
+  border: 1px solid #e8e9ea;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 5;
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f1f1f1;
+}

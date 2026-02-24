@@ -1,0 +1,36 @@
+@use '../../../app//styles/variables.scss' as *;
+
+.priority_box {
+  display: flex;
+  justify-content: start;
+  gap: 5.5px;
+  text-transform: uppercase;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 700;
+
+  &.low {
+    color: $color-green;
+  }
+
+  &.lower_medium {
+    color: $color-main-blue;
+  }
+
+  &.medium {
+    color: $color-grey;
+  }
+
+  &.upper_medium {
+    color: $color-orange;
+  }
+
+  &.high {
+    color: $color-red;
+  }
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}

@@ -1,0 +1,189 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.task_card {
+  width: 374px;
+  border-left: 5px solid transparent;
+  border-radius: 8px;
+   background-color: var(--bg-primary);
+  color: var(--text-primary);
+
+  &.in_progress {
+    border-left-color: $color-main-blue;
+  }
+
+  &.in_progress:hover {
+    border-color: $color-main-blue;
+  }
+
+  &.completed {
+    border-left-color: $color-green;
+  }
+
+  &.completed:hover {
+    border-color: $color-green;
+  }
+
+  &.expired {
+    border-left-color: $color-red;
+  }
+
+  &.expired:hover {
+    border-color: $color-red;
+  }
+
+  &.on_review {
+    border-left-color: $color-purple;
+  }
+
+  &.on_review:hover {
+    border-left-color: $color-purple;
+  }
+
+  &:hover {
+    border-block: 1px solid $color-main-blue;
+    border-inline-end: 1px solid $color-main-blue;
+    cursor: pointer;
+  }
+
+  .status_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #e8e9ea;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-top-right-radius: 8px;
+
+    .status_title {
+      display: flex;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: -2%;
+      color: #a3a8aa;
+      line-height: 18px;
+    }
+
+    .status_title_icon {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .task_title_label {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: start;
+    padding: 12px;
+    border-inline: 1px solid #e8e9ea;
+    border-top: none;
+    text-align: left;
+
+    .task_name {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      font-weight: bold;
+    }
+
+    .task_author {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: #767c80;
+      font-size: 14px;
+      width: 344px;
+    }
+
+    .task_author_title {
+      font-weight: 700;
+    }
+
+    .task_author_info {
+      display: flex;
+      gap: 12px;
+    }
+
+    .task_author_name {
+      color: var(--text-primary);
+    }
+  }
+
+  .priority_label {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    font-size: 14px;
+    border: 1px solid #e8e9ea;
+    border-top: none;
+    padding: 12px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 3%;
+      width: 93%;
+      height: 1px;
+      background-color: #e8e9ea;
+    }
+
+    .assigne,
+    .controller,
+    .priority {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+
+    .assigne_text,
+    .controller_text {
+      font-weight: 700;
+    }
+
+    .assigne_text,
+    .controller_text,
+    .comms_text,
+    .attchs_text {
+      color: $color-text-grey;
+    }
+
+    .priority {
+      justify-content: start;
+    }
+
+    .priotity_date_comms_attachments {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .date {
+      width: 96px;
+      text-align: right;
+    }
+
+    .comms,
+    .attachs {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .comms_icon,
+    .attachs_icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+@use '../../../../app/styles/variables.scss' as *;
+
+.create_task {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 390px;
+  padding: 16px;
+  font-size: 14px;
+  color: $color-text-grey;
+  background-color:  var( --bg-primary);
+
+  .create_task_drawer {
+    position: relative;
+    background-color: #fafafa;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    padding: 4px;
+  }
+
+  .header_title {
+    font-size: 16px;
+    font-weight: 700;
+    width: 286px;
+    text-align: center;
+    color: var(--text-modal-title);
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    border-block-end: 1px solid #d1d3d5;
+  }
+
+  .tab {
+    font-size: 14px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    padding-block: 8px;
+  }
+
+  .tab.active {
+    color: $color-main-blue;
+    border-block-end: 2px solid $color-main-blue;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 8px;
+  }
+
+  .create_task_title_and_item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .date_time_box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .date_box {
+    display: flex;
+    align-self: center;
+  }
+
+  .task_priority {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .task_priority_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .attachments {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    padding: 8px;
+    background-color: var(--bg-comms);
+    border: 1px dashed $color-main-blue;
+    border-radius: 12px;
+    line-height: 18px;
+    width: 100%;
+  }
+
+  .attachments_list {
+    width: 100%;
+  }
+}
+
+.drawer_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+button {
+  background: $color-main-blue;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #e0e0e0;
+}
+
+.submit_button {
+  width: 100%;
+  padding: 12px;
+  background-color: $color-main-blue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit_button:disabled {
+  background-color: #e0e0e0;
+}
+
+.submit_button {
+  width: 100%;
+  padding: 12px;
+  background-color: $color-main-blue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit_button:disabled {
+  background-color: #e0e0e0;
+}
+

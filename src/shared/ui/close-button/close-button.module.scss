@@ -1,0 +1,17 @@
+@use '../../../app//styles/variables.scss' as *;
+
+.close_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px;
+
+  .icon {
+    color: $color-main-blue;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}

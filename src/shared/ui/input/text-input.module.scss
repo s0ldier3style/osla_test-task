@@ -1,0 +1,21 @@
+ @use '../../../app/styles/variables.scss' as *;
+
+.text_input {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #E8E9EA;
+  border-radius: 8px;
+  background-color: var(--bg-primary);
+  padding-block: 12px;
+  padding-inline-start: 16px;
+  color: var(--color-text-grey);
+
+  &::placeholder {
+    color: var(--color-placeholder);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-main-blue;
+  }
+}

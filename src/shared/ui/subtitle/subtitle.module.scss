@@ -1,0 +1,9 @@
+@use '../../../app//styles/variables.scss' as *;
+
+.subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    color: $color-text-grey;
+}

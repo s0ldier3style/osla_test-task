@@ -1,0 +1,21 @@
+@use '../../../../../app/styles/variables.scss' as *;
+
+.priority_button {
+  background-color: #FAFAFA;
+  border: 1px solid #E8E9EA;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: $color-text-grey;
+  padding: 8px 29px;
+  font-weight: 600;
+  
+  &.selected {
+    background-color: $color-main-blue;
+    color: #FFFFFF;
+  }
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}

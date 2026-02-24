@@ -1,0 +1,28 @@
+$color-main-blue: #4FB1EB;
+$color-text-grey: #767C80;
+
+$color-green: #29CCC6;
+$color-red: #e53935;
+$color-purple: #9d50e1;
+$color-grey: #90a4ae;
+$color-orange: #EF9D1C;
+
+
+:root {
+  --color-main-blue: #{$color-main-blue};
+  --color-text-grey: #{$color-text-grey};
+  --color-green: #{$color-green};
+  --color-red: #{$color-red};
+  --color-purple: #{$color-purple};
+  --color-grey: #{$color-grey};
+  --color-orange: #{$color-orange};
+  --bg-primary: #fafafa;
+  --bg-secondary: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-modal-title: #1d2225;
+  --border-color: #e0e0e0;
+  --border-color-comms: #cae8f9;
+  --bg-comms: #e5f3fc;
+  --color-placeholder: #A3A8AA;
+}
