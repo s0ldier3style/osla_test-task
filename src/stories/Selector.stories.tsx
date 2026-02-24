@@ -36,7 +36,7 @@ export const WithDropdownOpen: Story = {
     onClear: () => console.log('Очистить выбор'),
   },
   render: (args) => {
-    const [selectedPerson, setSelectedPerson] = useState<string | null>(null);
+    const [, setSelectedPerson] = useState<string | null>(null);
     const [showDropdown, setShowDropdown] = useState(true);
 
     return (

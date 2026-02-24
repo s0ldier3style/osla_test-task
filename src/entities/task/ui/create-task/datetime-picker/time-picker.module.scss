@@ -5,6 +5,17 @@
   gap: 12px;
   border-radius: 8px;
   padding: 4px;
+  width: 130px;
+
+  input[type='time']::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  input[type='time']::-moz-calendar-picker-indicator {
+    display: none;
+  }
+  input[type='time']::-ms-clear {
+    display: none;
+  }
 
   .time_icon_box {
     width: 40px;
